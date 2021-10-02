@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchRestaurantTableViewCell" customModule="Test_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5z-75-2c9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodImage1" translatesAutoresizingMaskIntoConstraints="NO" id="DXH-GH-hAk">
+                                <rect key="frame" x="16" y="8" width="56" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DXH-GH-hAk" secondAttribute="height" id="txB-u7-qyB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEn-ap-SP4">
+                                <rect key="frame" x="88" y="16" width="224" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3GZ-dU-B0e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-8S-1Aq">
+                                <rect key="frame" x="88" y="41" width="224" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsK-7s-Tfc">
+                                <rect key="frame" x="88" y="58.5" width="224" height="5.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xss-8S-1Aq" firstAttribute="top" secondItem="PEn-ap-SP4" secondAttribute="bottom" id="8uj-Bc-aOd"/>
+                            <constraint firstItem="vsK-7s-Tfc" firstAttribute="leading" secondItem="Xss-8S-1Aq" secondAttribute="leading" id="95D-vn-OAm"/>
+                            <constraint firstItem="Xss-8S-1Aq" firstAttribute="leading" secondItem="PEn-ap-SP4" secondAttribute="leading" id="G9O-wj-Tty"/>
+                            <constraint firstItem="DXH-GH-hAk" firstAttribute="top" secondItem="r5z-75-2c9" secondAttribute="top" constant="8" id="M5o-Go-RFw"/>
+                            <constraint firstItem="PEn-ap-SP4" firstAttribute="leading" secondItem="DXH-GH-hAk" secondAttribute="trailing" constant="16" id="OdT-tF-a6r"/>
+                            <constraint firstItem="vsK-7s-Tfc" firstAttribute="top" secondItem="Xss-8S-1Aq" secondAttribute="bottom" id="RuC-pg-Hc5"/>
+                            <constraint firstItem="Xss-8S-1Aq" firstAttribute="trailing" secondItem="PEn-ap-SP4" secondAttribute="trailing" id="T9j-ja-qMR"/>
+                            <constraint firstItem="DXH-GH-hAk" firstAttribute="leading" secondItem="r5z-75-2c9" secondAttribute="leading" constant="16" id="WCV-od-BHf"/>
+                            <constraint firstAttribute="trailing" secondItem="PEn-ap-SP4" secondAttribute="trailing" constant="8" id="Wbv-5Y-X6U"/>
+                            <constraint firstItem="DXH-GH-hAk" firstAttribute="centerY" secondItem="r5z-75-2c9" secondAttribute="centerY" id="g23-Vl-5cU"/>
+                            <constraint firstItem="vsK-7s-Tfc" firstAttribute="trailing" secondItem="Xss-8S-1Aq" secondAttribute="trailing" id="jR5-IM-Gzq"/>
+                            <constraint firstItem="vsK-7s-Tfc" firstAttribute="height" relation="lessThanOrEqual" secondItem="Xss-8S-1Aq" secondAttribute="height" id="khG-5Z-tkF"/>
+                            <constraint firstAttribute="bottom" secondItem="DXH-GH-hAk" secondAttribute="bottom" constant="8" id="nmo-88-s6N"/>
+                            <constraint firstItem="PEn-ap-SP4" firstAttribute="top" secondItem="DXH-GH-hAk" secondAttribute="top" constant="8" id="pIj-eC-kO0"/>
+                            <constraint firstItem="vsK-7s-Tfc" firstAttribute="bottom" secondItem="DXH-GH-hAk" secondAttribute="bottom" id="uud-5t-ecB"/>
+                            <constraint firstItem="Xss-8S-1Aq" firstAttribute="height" secondItem="PEn-ap-SP4" secondAttribute="height" multiplier="0.7" id="y8B-Sw-AWm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r5z-75-2c9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BYC-M2-abc"/>
+                    <constraint firstAttribute="trailing" secondItem="r5z-75-2c9" secondAttribute="trailing" id="MO2-uP-9OJ"/>
+                    <constraint firstItem="r5z-75-2c9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PvC-Ns-wcM"/>
+                    <constraint firstAttribute="bottom" secondItem="r5z-75-2c9" secondAttribute="bottom" constant="16" id="mWF-1g-FsS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="foodImageView" destination="DXH-GH-hAk" id="RLC-de-niS"/>
+                <outlet property="orderLabel" destination="vsK-7s-Tfc" id="Wcj-0m-M1d"/>
+                <outlet property="restaurantLabel" destination="PEn-ap-SP4" id="4kw-ni-Oaw"/>
+                <outlet property="restaurantLocationLabel" destination="Xss-8S-1Aq" id="naD-Hp-AlC"/>
+            </connections>
+            <point key="canvasLocation" x="-1.4492753623188408" y="156.69642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="foodImage1" width="337.5" height="226.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

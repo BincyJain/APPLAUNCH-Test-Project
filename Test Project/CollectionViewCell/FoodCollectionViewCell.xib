@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCollectionViewCell" customModule="Test_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122.5" height="122.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122.5" height="122.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vi6-qY-G7G">
+                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="122.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-tq-6jS" customClass="DropShadowView" customModule="Test_Project" customModuleProvider="target">
+                                <rect key="frame" x="21.5" y="0.0" width="79.5" height="79.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodImage1" translatesAutoresizingMaskIntoConstraints="NO" id="Fme-Md-3tj">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="79.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Fme-Md-3tj" secondAttribute="height" id="1b4-Ou-FrY"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fme-Md-3tj" secondAttribute="bottom" id="P59-99-o9t"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fme-Md-3tj" secondAttribute="trailing" id="giT-VT-4Jr"/>
+                                    <constraint firstItem="Fme-Md-3tj" firstAttribute="top" secondItem="wjE-tq-6jS" secondAttribute="top" id="rrp-oR-LmL"/>
+                                    <constraint firstItem="Fme-Md-3tj" firstAttribute="leading" secondItem="wjE-tq-6jS" secondAttribute="leading" id="xYS-WP-GhT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="4ey-xn-dfh">
+                                <rect key="frame" x="21.5" y="87.5" width="79.5" height="30.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ey-xn-dfh" firstAttribute="leading" secondItem="wjE-tq-6jS" secondAttribute="leading" id="2X3-L7-fof"/>
+                            <constraint firstItem="wjE-tq-6jS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Vi6-qY-G7G" secondAttribute="leading" id="EET-Po-huL"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wjE-tq-6jS" secondAttribute="trailing" id="HOp-9K-VGR"/>
+                            <constraint firstItem="wjE-tq-6jS" firstAttribute="top" secondItem="Vi6-qY-G7G" secondAttribute="top" id="OYg-fT-kN6"/>
+                            <constraint firstAttribute="bottom" secondItem="4ey-xn-dfh" secondAttribute="bottom" constant="4.5" id="Zug-gR-MrR"/>
+                            <constraint firstItem="4ey-xn-dfh" firstAttribute="top" secondItem="wjE-tq-6jS" secondAttribute="bottom" constant="8" id="aem-H4-jQP"/>
+                            <constraint firstItem="wjE-tq-6jS" firstAttribute="centerX" secondItem="Vi6-qY-G7G" secondAttribute="centerX" id="gQH-5K-nOz"/>
+                            <constraint firstItem="wjE-tq-6jS" firstAttribute="height" secondItem="Vi6-qY-G7G" secondAttribute="height" multiplier="0.65" id="m7F-14-3o8"/>
+                            <constraint firstItem="4ey-xn-dfh" firstAttribute="trailing" secondItem="wjE-tq-6jS" secondAttribute="trailing" id="n8r-2X-Kud"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vi6-qY-G7G" secondAttribute="trailing" id="Gcw-MR-ZkL"/>
+                <constraint firstAttribute="bottom" secondItem="Vi6-qY-G7G" secondAttribute="bottom" id="eeJ-T3-vQx"/>
+                <constraint firstItem="Vi6-qY-G7G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iKY-hc-M3h"/>
+                <constraint firstItem="Vi6-qY-G7G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pTD-YZ-gxk"/>
+            </constraints>
+            <size key="customSize" width="140" height="163"/>
+            <connections>
+                <outlet property="cardContainerView" destination="wjE-tq-6jS" id="PW8-5h-Q1l"/>
+                <outlet property="foodImageView" destination="Fme-Md-3tj" id="aoH-JA-OiS"/>
+                <outlet property="foodNameLabel" destination="4ey-xn-dfh" id="m8R-nE-fYN"/>
+                <outlet property="mainView" destination="Vi6-qY-G7G" id="p4a-79-Bcu"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="foodImage1" width="337.5" height="226.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
